@@ -1,0 +1,25 @@
+package Github;
+
+class Shape {
+    void draw() {
+        System.out.println("Drawing...");
+    }
+}
+
+class Circle extends Shape {
+    void area() {
+        System.out.println("Area of circle");
+    }
+}
+
+class Square extends Shape {
+    void area() {
+        System.out.println("Area of square");
+    }
+
+    public static void main(String[] args) {
+        new Circle().area();
+        new Square().area();
+    }
+}
+
