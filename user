@@ -1,0 +1,16 @@
+package Github;
+
+class BankAccount {
+    private int balance = 1000;
+    protected int getBalance() {
+        return balance;
+    }
+}
+class User extends BankAccount {
+    void display() {
+        System.out.println("Balance: " + getBalance());
+    }
+    public static void main(String[] args) {
+        new User().display();
+    }
+}
