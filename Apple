@@ -1,0 +1,18 @@
+package Github;
+
+class Apple {
+    void taste() {
+        System.out.println("Sweet");
+    }
+}
+
+class Lemon {
+    void taste() {
+        System.out.println("Sour");
+    }
+
+    public static void main(String[] args) {
+        new Apple().taste();
+        new Lemon().taste();
+    }
+}
