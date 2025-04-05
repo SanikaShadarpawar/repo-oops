@@ -1,0 +1,18 @@
+package Github;
+
+class Super {
+    int value = 5;
+}
+
+class Sub extends Super {
+    int value = 10;
+
+    void show() {
+        System.out.println("Sub value: " + value);
+        System.out.println("Super value: " + super.value);
+    }
+
+    public static void main(String[] args) {
+        new Sub().show();
+    }
+}
