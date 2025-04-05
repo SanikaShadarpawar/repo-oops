@@ -1,0 +1,21 @@
+package Github;
+
+abstract class Device {
+    void powerOn() {
+        System.out.println("Powering on...");
+    }
+
+    abstract void start();
+}
+
+class Laptop extends Device {
+    void start() {
+        System.out.println("Laptop started!");
+    }
+
+    public static void main(String[] args) {
+        Laptop l = new Laptop();
+        l.powerOn();
+        l.start();
+    }
+}
