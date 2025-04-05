@@ -1,0 +1,20 @@
+package Github;
+
+interface Printer {
+    void print();
+}
+class Document {
+    void header() {
+        System.out.println("Document Header");
+    }
+}
+class Report extends Document implements Printer {
+    public void print() {
+        System.out.println("Printing Report...");
+    }
+    public static void main(String[] args) {
+        Report r = new Report();
+        r.header();
+        r.print();
+    }
+}
