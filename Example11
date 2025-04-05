@@ -1,0 +1,15 @@
+package Github;
+
+public class Example11 {
+    public static void main(String[] args) {
+        int[] nums = {10, 0, 5};
+
+        for (int n : nums) {
+            try {
+                System.out.println(100 / n);
+            } catch (ArithmeticException e) {
+                System.out.println("Can't divide by zero");
+            }
+        }
+    }
+}
