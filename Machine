@@ -1,0 +1,16 @@
+package Github;
+
+abstract class Machine {
+    Machine() {
+        System.out.println("Machine started");
+    }
+    abstract void operate();
+}
+class Robot extends Machine {
+    void operate() {
+        System.out.println("Robot operating");
+    }
+    public static void main(String[] args) {
+        new Robot().operate();
+    }
+}
