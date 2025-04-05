@@ -1,0 +1,17 @@
+package Github;
+
+interface Speaker {
+    default void speak() {
+        System.out.println("Speaking generally");
+    }
+}
+
+class Teacher implements Speaker {
+    public void speak() {
+        System.out.println("Teaching something!");
+    }
+
+    public static void main(String[] args) {
+        new Teacher().speak();
+    }
+}
